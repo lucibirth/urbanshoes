@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Urban Store — Premium Women's Footwear for the perfect classic look.">
+  <title>Urban Store | Women's Shoes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+    <a class="logo" href="index.html">Urban Store</a>
+    <nav>
+      <a href="#product">Shop</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#suggested">Discover More</a>
+      <a href="#footer">Info</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-section" id="product">
+      <div class="product-visuals">
+        <div class="main-image-container">
+          <img id="mainImage" src="assets/user_shoe_1.jpg" alt="No Boundaries Sport Sneakers">
+        </div>
+        <div class="product-thumbnails">
+          <button class="thumbnail active"><img src="assets/user_shoe_1.jpg" alt="Pink and Beige Sneaker"></button>
+          <button class="thumbnail"><img src="assets/user_shoe_2.jpg" alt="Black Sneaker"></button>
+          <button class="thumbnail"><img src="assets/main_shoes.jpg" alt="Side detail"></button>
+        </div>
+      </div>
+
+      <div class="product-details">
+        <div class="eyebrow">Sport Collection • Wide Width Available</div>
+        <h1>No Boundaries Lace-Up Sport Sneakers</h1>
+        <div class="rating"><span>★★★★★</span> <small>4.9 · 84 reviews</small></div>
+        <div class="price">$25.00 <del>$35.00</del></div>
+        <p class="description">Elevate your everyday style with the No Boundaries Lace-Up Sport Sneakers. Designed for
+          ultimate comfort and featuring wide width availability, these sneakers deliver a perfect fit for all-day wear.
+          Whether you're running errands or enjoying a casual weekend, these are your go-to footwear for effortless
+          style.</p>
+
+        <div class="option-group">
+          <strong>Color: <span id="selectedColor">Classic Brown</span></strong>
+          <div class="colors">
+            <button class="color-btn color-tortoise active" data-color="Classic Brown"
+              aria-label="Classic Brown"></button>
+            <button class="color-btn color-black" data-color="Midnight Black" aria-label="Midnight Black"></button>
+            <button class="color-btn color-champagne" data-color="Tan Leather" aria-label="Tan Leather"></button>
+          </div>
+        </div>
+
+        <div class="option-group">
+          <div class="quantity-header">
+            <strong>Quantity</strong>
+            <div class="stock-status in-stock"><span class="dot"></span> In Stock</div>
+          </div>
+          <div class="quantity-selector"><button id="minus">−</button><span id="qty">1</span><button
+              id="plus">+</button></div>
+        </div>
+
+        <button class="checkout-btn" id="checkout">Proceed to Checkout</button>
+      </div>
+    </section>
+
+    <section class="accordion-section reveal-on-scroll">
+      <div class="accordion-container">
+        <div class="accordion">
+          <details class="accordion-item" open>
+            <summary>Product Features <span class="icon">+</span></summary>
+            <div class="accordion-content">
+              <p>Engineered for all-day comfort, these sport sneakers seamlessly blend everyday casual style with
+                practical design.</p>
+              <ul>
+                <li>Lace-up closure for a secure fit</li>
+                <li>Durable, slip-resistant rubber outsoles</li>
+                <li>Wide width available for optimal comfort</li>
+                <li>Lightweight and breathable construction</li>
+              </ul>
+            </div>
+          </details>
+          <details class="accordion-item">
+            <summary>Dimensions & Fit <span class="icon">+</span></summary>
+            <div class="accordion-content">
+              <p>A meticulously proportioned silhouette that beautifully complements both casual and formal attire. True
+                to UK sizing.</p>
+              <ul>
+                <li>Heel height: 25mm</li>
+                <li>Shaft height: 140mm</li>
+                <li>Standard D width fitting</li>
+              </ul>
+            </div>
+          </details>
+          <details class="accordion-item">
+            <summary>Shipping & Returns <span class="icon">+</span></summary>
+            <div class="accordion-content">
+              <p>Enjoy complimentary insured priority shipping on all UK domestic orders exceeding $100.</p>
+              <p>We confidently offer a 14-day pristine-condition return window for a seamless exchange or refund. <a
+                  href="returns.html" style="text-decoration:underline;color:var(--text-main);">View return policy</a>.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-section reveal-on-scroll" id="reviews">
+      <div class="reviews-container">
+        <div class="reviews-summary">
+          <span>Community</span>
+          <h2>Loved by Women Everywhere</h2>
+          <div class="rating-score">
+            <strong>4.9</strong>
+            <div class="large-stars">★★★★★</div>
+            <p>Based on 84 reviews</p>
+          </div>
+
+          <div class="rating-bars">
+            <div class="rating-row"><span>5</span>
+              <div class="bar-bg">
+                <div class="bar-fill" style="width:85%"></div>
+              </div><small>72</small>
+            </div>
+            <div class="rating-row"><span>4</span>
+              <div class="bar-bg">
+                <div class="bar-fill" style="width:12%"></div>
+              </div><small>10</small>
+            </div>
+            <div class="rating-row"><span>3</span>
+              <div class="bar-bg">
+                <div class="bar-fill" style="width:3%"></div>
+              </div><small>2</small>
+            </div>
+            <div class="rating-row"><span>2</span>
+              <div class="bar-bg">
+                <div class="bar-fill" style="width:0%"></div>
+              </div><small>0</small>
+            </div>
+            <div class="rating-row"><span>1</span>
+              <div class="bar-bg">
+                <div class="bar-fill" style="width:0%"></div>
+              </div><small>0</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-list">
+          <article class="review-card">
+            <div class="review-top">
+              <div class="review-author-info">
+                <strong>Sarah K.</strong><small>Verified Buyer</small>
+              </div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+            <p class="review-text">“These sneakers are exactly what I was looking for! The wide width option is a lifesaver, and they are incredibly comfortable right out of the box. Perfect for running errands.”</p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-top">
+              <div class="review-author-info">
+                <strong>Elena M.</strong><small>Verified Buyer</small>
+              </div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+            <p class="review-text">“Such a great value for the price. The style is super cute and versatile enough to wear with jeans or leggings. The cushioned soles keep my feet happy all day long.”</p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-top">
+              <div class="review-author-info">
+                <strong>Chloe T.</strong><small>Verified Buyer</small>
+              </div>
+              <div class="review-stars">★★★★☆</div>
+            </div>
+            <p class="review-text">“I love the sparkly details! They add just the right amount of flair to an everyday sneaker. Took off one star only because the laces are a bit too long for my liking.”</p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-top">
+              <div class="review-author-info">
+                <strong>Jessica L.</strong><small>Verified Buyer</small>
+              </div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+            <p class="review-text">“Finally, a fashionable sneaker that doesn't pinch my toes. The breathable material is great for warmer days, and they feel incredibly lightweight on my feet.”</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="suggested reveal-on-scroll" id="suggested">
+      <div class="section-heading"><span>Explore More</span>
+        <h2>Curated For You</h2>
+      </div>
+      <div class="slider-wrap">
+        <button class="slider-btn prev" id="prev">‹</button>
+        <div class="slider" id="slider">
+          <article class="slide"><img src="assets/aeroglide_runner.png" alt="AeroGlide Runner">
+            <div>
+              <h3>AeroGlide Runner</h3>
+              <p>Breathable sport mesh</p><b>$25.00</b>
+            </div>
+          </article>
+          <article class="slide"><img src="assets/timber_street_low.png" alt="Timber Street Low">
+            <div>
+              <h3>Timber Street Low</h3>
+              <p>Wide width available</p><b>$25.00</b>
+            </div>
+          </article>
+          <article class="slide"><img src="assets/pristine_court_classic.png" alt="Pristine Court Classic">
+            <div>
+              <h3>Pristine Court Classic</h3>
+              <p>Lightweight design</p><b>$25.00</b>
+            </div>
+          </article>
+          <article class="slide"><img src="assets/dreamscape_platform.jpg" alt="Dreamscape Platform">
+            <div>
+              <h3>Dreamscape Platform</h3>
+              <p>Breathable material</p><b>$25.00</b>
+            </div>
+          </article>
+          <article class="slide"><img src="assets/shoe_5.jpg" alt="Cloudstep Chunky Trainer">
+            <div>
+              <h3>Cloudstep Chunky Trainer</h3>
+              <p>Modern minimalist aesthetic</p><b>$35.00</b>
+            </div>
+          </article>
+
+        </div>
+        <button class="slider-btn next" id="next">›</button>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Urban Store</div>
+        <p>Curating the finest contemporary footwear for the modern woman. Step out with confidence and classic style.
+        </p>
+      </div>
+      <div>
+        <h4>Information</h4><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms & Conditions</a><a
+          href="returns.html">Return & Refund Policy</a>
+      </div>
+      <div>
+        <h4>Customer Care</h4><a href="#product">Shop Shoes</a><a href="#suggested">Collections</a><button
+          class="footer-contact" id="contactOpen">Contact Us</button>
+      </div>
+      <div>
+        <h4>Boutique</h4>
+        <p style="color: rgba(255,255,255,0.7); line-height: 1.8; margin: 0; font-size: 0.95rem;">
+          824 Horizon Avenue, Suite 4B<br>
+          Metropolis, NY 10001<br>
+          United States
+        </p>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Urban Store. All rights reserved.</div>
+  </footer>
+
+  <div class="modal" id="contactModal">
+    <div class="modal-card contact-modal-card">
+      <button class="modal-x" id="contactClose" aria-label="Close">×</button>
+      <div id="contactFormView">
+        <div class="contact-header-text">
+          <div class="contact-title-row">
+            <div class="modal-icon">✉</div>
+            <h2>Get in Touch</h2>
+          </div>
+          <p>Have a question about fit or styling? We're here to help.</p>
+        </div>
+
+        <div class="contact-split">
+          <div class="contact-info">
+            <h3>Boutique</h3>
+            <p>824 Horizon Avenue, Suite 4B<br>Metropolis, NY 10001<br>United States</p>
+
+            <h3>Contact</h3>
+            <p>Phone: +1 (555) 019-8372<br>Email: hello@urbanstore.com</p>
+
+            <h3>Opening Hours</h3>
+            <p>Mon - Sat: 10:00 AM - 8:00 PM<br>Sunday: 12:00 PM - 6:00 PM</p>
+          </div>
+
+          <div class="contact-form-col">
+            <form id="contactForm" novalidate>
+              <label>Full Name <span>*</span></label>
+              <input type="text" id="contactName" placeholder="Your full name" required>
+              <div class="field-error" id="nameError"></div>
+
+              <label>Email Address <span>*</span></label>
+              <input type="email" id="contactEmail" placeholder="hello@urbanstore.com" required>
+              <div class="field-error" id="emailError"></div>
+
+              <label>Subject <span>*</span></label>
+              <input type="text" id="contactSubject" placeholder="How can we help?" required>
+              <div class="field-error" id="subjectError"></div>
+
+              <label>Message <span>*</span></label>
+              <textarea id="contactMessage" rows="4" placeholder="Write your message..." required></textarea>
+              <div class="field-error" id="messageError"></div>
+
+              <button type="submit" class="modal-action" style="width:100%">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="contact-success" id="contactSuccess">
+        <div class="modal-icon">✓</div>
+        <h2>Message Sent Successfully!</h2>
+        <p>Thank you for reaching out to Urban Store. Our concierge team will reply shortly.</p>
+        <button class="modal-action" id="successClose">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-card">
+      <div class="modal-icon">🔒</div>
+      <h2>Checkout Unavailable</h2>
+      <p>Our secure checkout is undergoing scheduled maintenance and is currently unavailable. Please check back later
+        to complete your purchase.</p>
+      <button class="modal-action" id="closeModal">Close</button>
+    </div>
+  </div>
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
